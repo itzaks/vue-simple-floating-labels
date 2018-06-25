@@ -110,7 +110,7 @@
             }
         },
         mounted() {
-            this.formElement = this.$refs['input-container'].querySelector('input, select');
+            this.formElement = this.$refs['input-container'].querySelector('input, select, textarea');
             if (this.formElement) {
                 this.formElement.addEventListener('input', this.input);
                 this.formElement.addEventListener('blur', this.blur);
